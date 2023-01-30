@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>problog</title>
+    <meta
+      name="description"
+      content="駆け出しのへなちょこプログラマーの成長日記"
+    />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- favicon/webclipicon -->
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="webclip.png" />
+
+    <!-- ogp -->
+    <meta property="og:site_name" content="problog" />
+    <meta property="og:url" content="サイトのURL" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="problog" />
+    <meta
+      property="og:description"
+      content="駆け出しのへなちょこプログラマーの成長日記"
+    />
+    <meta property="og:image" content="URL" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:description"
+      content="駆け出しのへなちょこプログラマーの成長日記"
+    />
+    <meta name="twitter:image:src" content="URL" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    /> -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.js"
+      integrity="sha512-2rSKyHme2mrplfIGsA8bFYAYddQ66qR+Dh71OrNZsZOtMdCYa8V1lJvl2mr/qzwcMIs20ddYz4JLiBmwS2K7Iw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body class="js-area" >
+    <div class="data-scroll-container" >
+      <header class="l_header  " id="hogehoge">
+        <div class="l_header_container">
+          <nav class="js_navigation">
+            <div class="l_header_nav_title-wrapper">
+              <p class="l_header_nav_title u_font">お品書き</p>
+            </div>
+            <ul class="l_header-nav_list">
+              <li class="l_header-nav_item">
+                <p class="l_header-nav_link u_font">一</p>
+                <a class="l_header_nav_link-txt" href="#section1"
+                  >サイトについて
+                </a>
+              </li>
+              <li class="l_header-nav_item">
+                <p class="l_header-nav_link u_font">二</p>
+                <a class="l_header_nav_link-txt" href="#section2">自分史 </a>
+              </li>
+              <li class="l_header-nav_item">
+                <p class="l_header-nav_link u_font">三</p>
+                <a class="l_header_nav_link-txt" href="#section3">仕事 </a>
+              </li>
+              <li class="l_header-nav_item">
+                <p class="l_header-nav_link u_font">四</p>
+                <a class="l_header_nav_link-txt" href="#section4">技術 </a>
+              </li>
+              <li class="l_header-nav_item">
+                <p class="l_header-nav_link u_font">五</p>
+                <a class="l_header_nav_link-txt" href="#section5">制作物 </a>
+              </li>
+              <li class="l_header-nav_item">
+                <p class="l_header-nav_link u_font">六</p>
+                <a class="l_header_nav_link-txt" href="#section6"
+                  >お問い合わせ
+                </a>
+              </li>
+              <li class="l_header-nav_item">
+                <p class="l_header-nav_link u_font">七</p>
+                <a class="l_header_nav_link-txt" href="#section7">twitter </a>
+              </li>
+              <li class="l_header-nav_item">
+                <p class="l_header-nav_link u_font">八</p>
+                <a class="l_header_nav_link-txt" href="#section7">instagram </a>
+              </li>
+              <li class="l_header-nav_item">
+                <p class="l_header-nav_link u_font">九</p>
+                <a class="l_header_nav_link-txt" href="#section7">faceboook </a>
+              </li>
+              <li class="l_header-nav_item">
+                <p class="l_header-nav_link u_font">十</p>
+                <a class="l_header_nav_link-txt" href="#section7">EMAIL </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="l_header_title_wrapper">
+          <div class="l_header_title_txt-box l_header_title_txt-box01">
+            <p class="l_header_title_txt active u_font">輝</p>
+          </div>
+          <div class="l_header_title_txt-box l_header_title_txt-box02">
+            <p class="l_header_title_txt active u_font">輝</p>
+          </div>
+        </div>
+        <div class="l_lorder">
+          <p class="TextRandomAnime u_verticle-rl">
+            一人でも多くの人の思いを形に、一つでも後悔のない世界を作るために
+          </p>
+        </div>
+      </header>
+
+      <main class="l_main" >
+        <!-- サイトについて -->
+        <section class="m_main_contents" id="section1" >
+          <div class="m_contents_title-wrapper">
+            <p class="m_contents_title-txt u_font">サイトについて</p>
+          </div>
+          <div class="m_contents_content u_verticle-rl">
+            <span class="u_font_bold">一人でも多くの人の夢を叶える</span
+            >ために製作を行っています。そのために用いることができる技術をこのサイトで確認できます。<br />製作の際のやり取りの中からあなたの思いをくみ取り思いをできる限形にします。<br />
+          </div>
+          <span
+            class="u_img_wrapper u_img_wrapper01"
+          >
+            <img
+              src="/img/sumi01.png"
+              alt=""
+              class="u_sumi_img"
+            />
+          </span>
+          <span
+            class="u_img_wrapper u_img_wrapper02"
+          >
+            <img
+              src="/img/sumi02.png"
+              alt=""
+              class="u_sumi_img"
+            />
+          </span>
+          <span
+            class="u_img_wrapper u_img_wrapper03"
+          >
+            <img
+              src="/img/sumi09.png"
+              alt=""
+              class="u_sumi_img"
+            />
+          </span>
+          <span
+            class="u_img_wrapper u_img_wrapper04"
+          >
+            <img
+              src="/img/sumi12.png"
+              alt=""
+              class="u_sumi_img"
+            />
+          </span>
+        </section>
+        <!-- 自分史 -->
+        <section class="m_main_contents" id="section2" >
+          <div class="m_contents_title-wrapper">
+            <p class="m_contents_title-txt u_font">自分史</p>
+          </div>
+          <div class="m_contents_content">
+            <ul class="m_contents_menu-list">
+              <li class="m_contents_menu-item">
+                <div class="m_content_item_wrapper">
+                  <p class="m_cintent_item-head u_verticle-rl">二〇〇一年</p>
+                  <p class="m_cintent_item u_verticle-rl">福岡県出身</p>
+                </div>
+              </li>
+              <li class="m_contents_menu-item">
+                <div class="m_content_item_wrapper">
+                  <p class="m_cintent_item-head u_verticle-rl">二〇一四年</p>
+                  <p class="m_cintent_item u_verticle-rl">
+                    横浜市立南高等学校<br />附属中学校入学
+                  </p>
+                </div>
+              </li>
+              <li class="m_contents_menu-item">
+                <div class="m_content_item_wrapper">
+                  <p class="m_cintent_item-head u_verticle-rl">二〇一七年</p>
+                  <p class="m_cintent_item u_verticle-rl">
+                    横浜市立南高等学校入学
+                  </p>
+                </div>
+              </li>
+              <li class="m_contents_menu-item">
+                <div class="m_content_item_wrapper">
+                  <p class="m_cintent_item-head u_verticle-rl">二〇二〇年</p>
+                  <p class="m_cintent_item u_verticle-rl">国士舘大学入学</p>
+                </div>
+              </li>
+              <li class="m_contents_menu-item">
+                <div class="m_content_item_wrapper">
+                  <p class="m_cintent_item-head u_verticle-rl">二〇二二年</p>
+                  <p class="m_cintent_item u_verticle-rl">zeroplus入学</p>
+                </div>
+              </li>
+              <li class="m_contents_menu-item">
+                <div class="m_content_item_wrapper">
+                  <p class="m_cintent_item-head u_verticle-rl">二〇二二年</p>
+                  <p class="m_cintent_item u_verticle-rl">初案件獲得</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <span
+            class="u_img_wrapper u_img_wrapper03"
+          >
+            <img
+              src="/img/sumi03.png"
+              alt=""
+              class="u_sumi_img"
+            />
+          </span>
+          <span
+            class="u_img_wrapper u_img_wrapper04"
+          >
+            <img
+              src="/img/sumi04.png"
+              alt=""
+              class="u_sumi_img"
+            />
+          </span>
+          <span
+            class="u_img_wrapper u_img_wrapper09"
+          >
+            <img
+              src="/img/sumi13.png"
+              alt=""
+              class="u_sumi_img"
+            />
+          </span>
+          <span
+            class="u_img_wrapper u_img_wrappe06"
+          >
+            <img
+              src="/img/sumi14.png"
+              alt=""
+              class="u_sumi_img"
+            />
+          </span>
+        </section>
+        <!-- 仕事 -->
+        <section class="m_main_contents" id="section3" >
+          <span
+            class="u_img_wrapper u_img_wrapper05"
+          >
+            <img
+              src="/img/sumi05.png"
+              alt=""
+              class="u_sumi_img"
+            />
+          </span>
+          <span
+            class="u_img_wrapper u_img_wrapper06"
+          >
+            <img
+              src="/img/sumi06.png"
+              alt=""
+              class="u_sumi_img"
+            />
+          </span>
+          <span
+            class="u_img_wrapper u_img_wrapper01"
+          >
+            <img
+              src="/img/sumi15.png"
+              alt=""
+              class="u_sumi_img"
+            />
+          </span>
+          <span
+            class="u_img_wrapper u_img_wrapper02"
+          >
+            <img
+              src="/img/sumi16.png"
+              alt=""
+              class="u_sumi_img"
+            />
+          </span>
+          <div class="m_contents_title-wrapper">
+            <p class="m_contents_title-txt u_font">仕事</p>
+          </div>
+          <div class="m_contents_content">
+            <ul class="m_contents_menu-list">
+              <li class="m_contents_menu-item">
+                <div class="m_content_item_wrapper">
+                  <p class="m_cintent_item-head u_verticle-rl">い</p>
+                  <p class="m_cintent_item u_verticle-rl">ディレクション</p>
+                </div>
+                <div class="m_content_item-detail u_verticle-rl">
+                  <p class="m_content_item-detail-txt">
+                    チームでの作成に際して製作の方法を確定し、スケジュール、タスク、メンバー等の管理します。
+                  </p>
+                  <div class="m_content_item_contact-wrapper">
+                    <a href="#section6" class="m_content_contact_link"
+                      >お問い合わせ</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="m_contents_menu-item">
+                <div class="m_content_item_wrapper">
+                  <p class="m_cintent_item-head u_verticle-rl">ろ</p>
+                  <p class="m_cintent_item u_verticle-rl">デザイン</p>
+                </div>
+                <div class="m_content_item-detail u_verticle-rl">
+                  <p class="m_content_item-detail-txt">
+                    webサイトのデザインをヒアリングを入念にしたうえで行いイメージ通りのものを作成します。
+                  </p>
+                  <div class="m_content_item_contact-wrapper">
+                    <a href="#section6" class="m_content_contact_link"
+                      >お問い合わせ</a
+                    >
+                  </div>
+
+              </li>
+              <li class="m_contents_menu-item">
+                <div class="m_content_item_wrapper">
+                  <p class="m_cintent_item-head u_verticle-rl">は</p>
+                  <p class="m_cintent_item u_verticle-rl">ライティング</p>
+                </div>
+                <div class="m_content_item-detail u_verticle-rl">
+                  <p class="m_content_item-detail-txt">
+                    webサイト内の文章はもちろん、広告等に利用する文章も作成します。
+                  </p>
+                  <div class="m_content_item_contact-wrapper">
+                    <a href="#section6" class="m_content_contact_link"
+                      >お問い合わせ</a
+                    >
+                  </div>
+
+              </li>
+              <li class="m_contents_menu-item">
+                <div class="m_content_item_wrapper">
+                  <p class="m_cintent_item-head u_verticle-rl">に</p>
+                  <p class="m_cintent_item u_verticle-rl">コーディング</p>
+                </div>
+                <div class="m_content_item-detail u_verticle-rl">
+                  <p class="m_content_item-detail-txt">
+                    デザインをもとにSEO対策にも対応した精密なコーディングを行います。
+                  </p>
+                  <div class="m_content_item_contact-wrapper">
+                    <a href="#section6" class="m_content_contact_link"
+                      >お問い合わせ</a
+                    >
+                  </div>
+              </li>
+              <li class="m_contents_menu-item">
+                <div class="m_content_item_wrapper">
+                  <p class="m_cintent_item-head u_verticle-rl">ほ</p>
+                  <p class="m_cintent_item u_verticle-rl">ワードプレス</p>
+                </div>
+                <div class="m_content_item-detail u_verticle-rl">
+                  <p class="m_content_item-detail-txt">
+                    既存のwebサイトでもワードプレス化をすることにより管理を簡略化します。
+                  </p>
+                  <div class="m_content_item_contact-wrapper">
+                    <a href="#section6" class="m_content_contact_link"
+                      >お問い合わせ</a
+                    >
+                  </div>
+              </li>
+              <li class="m_contents_menu-item">
+                <div class="m_content_item_wrapper">
+                  <p class="m_cintent_item-head u_verticle-rl">へ</p>
+                  <p class="m_cintent_item u_verticle-rl">保守・運用</p>
+                </div>
+                <div class="m_content_item-detail u_verticle-rl">
+                  <p class="m_content_item-detail-txt">
+                    既存のwebサイトに対してメンテナンスや更新を細かに行います。
+                  </p>
+                  <div class="m_content_item_contact-wrapper">
+                    <a href="#section6" class="m_content_contact_link"
+                      >お問い合わせ</a
+                    >
+                  </div>
+              </li>
+              <li class="m_contents_menu-item">
+                <div class="m_content_item_wrapper">
+                  <p class="m_cintent_item-head u_verticle-rl">と</p>
+                  <p class="m_cintent_item u_verticle-rl">修正</p>
+                </div>
+                <div class="m_content_item-detail u_verticle-rl">
+                  <p class="m_content_item-detail-txt">
+                    既存のウェブサイトの問題点の修正をし、より良いものに改善します。
+                  </p>
+                  <div class="m_content_item_contact-wrapper">
+                    <a href="#section6" class="m_content_contact_link"
+                      >お問い合わせ</a
+                    >
+                  </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- 技術 -->
+        <section class="m_main_contents" id="section4" >
+          <span
+            class="u_img_wrapper u_img_wrapper07"
+          >
+            <img
+              src="/img/sumi07.png"
+              alt=""
+              class="u_sumi_img"
+            />
+          </span>
+          <span
+            class="u_img_wrapper u_img_wrapper08"
+          >
+            <img
+              src="/img/sumi08.png"
+              alt=""
+              class="u_sumi_img"
+            />
+          </span>
+          <span
+            class="u_img_wrapper u_img_wrapper03"
+          >
+            <img
+              src="/img/sumi17.png"
+              alt=""
+              class="u_sumi_img"
+            />
+          </span>
+          <span
+            class="u_img_wrapper u_img_wrapper04"
+          >
+            <img
+              src="/img/sumi18.png"
+              alt=""
+              class="u_sumi_img"
+            />
+          </span>
+          <div class="m_contents_title-wrapper">
+            <p class="m_contents_title-txt u_font">技術</p>
+          </div>
+          <div class="m_contents_content">
+            <ul class="m_contents_menu-list">
+              <li class="m_contents_menu-item">
+                <div class="m_content_item_wrapper">
+                  <p class="m_cintent_item-head u_verticle-rl">い</p>
+                  <p class="m_cintent_item u_verticle-rl">html</p>
+                </div>
+              </li>
+              <li class="m_contents_menu-item">
+                <div class="m_content_item_wrapper">
+                  <p class="m_cintent_item-head u_verticle-rl">ろ</p>
+                  <p class="m_cintent_item u_verticle-rl">CSS</p>
+                </div>
+              </li>
+              <li class="m_contents_menu-item">
+                <div class="m_content_item_wrapper">
+                  <p class="m_cintent_item-head u_verticle-rl">は</p>
+                  <p class="m_cintent_item u_verticle-rl">javascript</p>
+                </div>
+              </li>
+              <li class="m_contents_menu-item">
+                <div class="m_content_item_wrapper">
+                  <p class="m_cintent_item-head u_verticle-rl">に</p>
+                  <p class="m_cintent_item u_verticle-rl">jquery</p>
+                </div>
+              </li>
+              <li class="m_contents_menu-item">
+                <div class="m_content_item_wrapper">
+                  <p class="m_cintent_item-head u_verticle-rl">ほ</p>
+                  <p class="m_cintent_item u_verticle-rl">WordPress</p>
+                </div>
+              </li>
+              <li class="m_contents_menu-item">
+                <div class="m_content_item_wrapper">
+                  <p class="m_cintent_item-head u_verticle-rl">へ</p>
+                  <p class="m_cintent_item u_verticle-rl">XD</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- 制作物 -->
+        <section class="m_main_contents" id="section5" >
+          <div class="m_contents_title-wrapper">
+            <p class="m_contents_title-txt u_font">制作物</p>
+          </div>
+          <div class="m_contents_content">
+            <ul class="m_contents_menu-list">
+              <li class="m_contents_menu-item">
+                <p class="m_cintent_item-head u_verticle-rl">壱</p>
+                <p class="m_cintent_item u_verticle-rl">ポートフォリオサイト</p>
+                <div class="m_content_img-wrapper">
+                  <a
+                    href="portfolio_jp/模写03/src/index.html"
+                    class="m_content_img_link"
+                  >
+                    <img src="img/create01.png" alt="" class="m_sontent_img" />
+                  </a>
+                </div>
+              </li>
+              <li class="m_contents_menu-item">
+                <p class="m_cintent_item-head u_verticle-rl">弐</p>
+                <p class="m_cintent_item u_verticle-rl">ポートフォリオサイト</p>
+                <div class="m_content_img-wrapper">
+                  <a
+                    href="portfolio_jp02/src/index.html"
+                    class="m_content_img_link"
+                  >
+                    <img src="img/create02.png" alt="" class="m_sontent_img" />
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <span
+            class="u_img_wrapper u_img_wrapper08"
+          >
+            <img
+              src="/img/sumi10.png"
+              alt=""
+              class="u_sumi_img"
+            />
+          </span>
+          <span
+            class="u_img_wrapper u_img_wrapper09"
+          >
+            <img
+              src="/img/sumi09.png"
+              alt=""
+              class="u_sumi_img"
+            />
+          </span>
+          <span
+            class="u_img_wrapper u_img_wrapper01"
+          >
+            <img
+              src="/img/sumi20.png"
+              alt=""
+              class="u_sumi_img"
+            />
+          </span>
+          <span
+            class="u_img_wrapper u_img_wrapper02"
+          >
+            <img
+              src="/img/sumi19.png"
+              alt=""
+              class="u_sumi_img"
+            />
+          </span>
+        </section>
+
+        <form
+          action=""
+          class="contact_form"
+          id="section6"
+          
+        >
+          <div class="contact_form_container">
+            <div class="contact_form_title_wrapper">
+              <p class="contact_form_title_txt">お問い合わせ</p>
+            </div>
+            <dl class="contact_form_wrapper">
+              <div class="contact_form_contents">
+                <dt class="contact_form_content_title">お名前</dt>
+                <div class="contact_form_content">
+                  <dd class="contact_form_content_input">
+                    <input type="text" class="input" />
+                  </dd>
+                </div>
+              </div>
+              <div class="contact_form_contents">
+                <dt class="contact_form_content_title">電話番号</dt>
+                <div class="contact_form_content">
+                  <dd class="contact_form_content_input">
+                    <input type="tell" class="input" />
+                  </dd>
+                </div>
+              </div>
+              <div class="contact_form_contents">
+                <dt class="contact_form_content_title">EMAIL</dt>
+                <div class="contact_form_content">
+                  <dd class="contact_form_content_input">
+                    <input type="email" class="input" />
+                  </dd>
+                </div>
+              </div>
+              <div class="contact_form_contents">
+                <dt class="contact_form_content_title">お問い合わせ内容</dt>
+                <div class="contact_form_content">
+                  <dd class="contact_form_content_input">
+                    <ul class="form-radio-list">
+                      <li class="form-radio-item">
+                        <label for="man" class="form-label">
+                          <input
+                            type="radio"
+                            name="job"
+                            id="request"
+                            class="form-radio"
+                          />
+                          <span class="form-label-txt">仕事依頼</span>
+                        </label>
+                      </li>
+                      <li class="form-radio-item">
+                        <label for="woman" class="form-label">
+                          <input
+                            type="radio"
+                            name="job"
+                            id="consalt"
+                            class="form-radio"
+                          />
+                          <span class="form-label-txt">相談</span>
+                        </label>
+                      </li>
+                      <li class="form-radio-item">
+                        <label for="woman" class="form-label">
+                          <input
+                            type="radio"
+                            name="job"
+                            id="else"
+                            class="form-radio"
+                          />
+                          <span class="form-label-txt">その他</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </dd>
+                </div>
+              </div>
+              <div class="contact_form_contents">
+                <dt class="contact_form_content_title">詳細</dt>
+                <div class="contact_form_content">
+                  <dd class="contact_form_content_input">
+                    <textarea rows="3" class="input"></textarea>
+                  </dd>
+                </div>
+              </div>
+            </dl>
+            <input type="submit" value="送信する" class="input_submit" />
+          </div>
+        </form>
+      </main>
+
+      <footer
+        class="l_footer scrollify u_font  "
+        id="section7"
+        
+      >
+        <div class="l_footer_container">
+          <div class="l_footer_menu_wrapper">
+            <ul class="l_footer_menu_list">
+              <li class="l_footer_menu_item">
+                <a
+                  class="l_footer_menu_item-link"
+                  href="#section1"
+                  >サイトについて</a
+                >
+              </li>
+              <li class="l_footer_menu_item">
+                <a
+                  class="l_footer_menu_item-link"
+                  href="#section2"
+                  >自分史</a
+                >
+              </li>
+              <li class="l_footer_menu_item">
+                <a
+                  class="l_footer_menu_item-link"
+                  href="#section3"
+                  >仕事</a
+                >
+              </li>
+              <li class="l_footer_menu_item">
+                <a
+                  class="l_footer_menu_item-link"
+                  href="#section4"
+                  >技術</a
+                >
+              </li>
+              <li class="l_footer_menu_item">
+                <a
+                  href="contact.html"
+                  class="l_footer_menu_item-link"
+                  href="#section5"
+                  >制作物</a
+                >
+              </li>
+              <li class="l_footer_menu_item">
+                <a
+                  class="l_footer_menu_item-link"
+                  href="#section6"
+                  >お問い合わせ</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="l_footer_contact">
+            <div class="l_footer_contact_wrapper">
+              <div class="l_footer_mobile_item">
+                <p class="l_footer_mobile_item-title">TEL</p>
+                <p class="l_footer_mobile_item-txt">080-3353-6654</p>
+              </div>
+              <div class="l_footer_mobile_item">
+                <p class="l_footer_mobile_item-title">EMAIL</p>
+                <p class="l_footer_mobile_item-txt">zhuneihui06@gmail.com</p>
+              </div>
+
+              <div class="l_footer_contact_sns">
+                <div class="l_footer_sns_item">
+                  <a href="" class="l_footer_sns_link">
+                    <img
+                      src="img/teitter_logo.png"
+                      alt=""
+                      class="l_footer_sns_img"
+                    />
+                  </a>
+                </div>
+                <div class="l_footer_sns_item">
+                  <a href="" class="l_footer_sns_link">
+                    <img
+                      src="img/instagram_logo.png"
+                      alt=""
+                      class="l_footer_sns_img"
+                    />
+                  </a>
+                </div>
+                <div class="l_footer_sns_item">
+                  <a href="" class="l_footer_sns_link">
+                    <img
+                      src="img/facebook_logo.png"
+                      alt=""
+                      class="l_footer_sns_img"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="l_footer_name">
+              <p class="l_footer_name-txt">竹内　輝</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
